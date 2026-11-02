@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        form {
+            background-color: white;
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" placeholder="Enter password" required>
+        <br><br>
+
+        <label>Mobile Number:</label>
+        <input type="tel" placeholder="Enter mobile number" required>
+        <br><br>
+
+        <label>Gender:</label>
+        <br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
