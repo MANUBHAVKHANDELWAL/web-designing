@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gmail Registration and Login</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightblue;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .box {
+            background-color: white;
+            width: 320px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            cursor: pointer;
+        }
+
+        a {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page:target {
+            display: block;
+        }
+
+        #home {
+            display: block;
+        }
+
+        body:has(.page:target) #home {
+            display: none;
+        }
+
+        #home:target {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Home Page -->
+    <div class="box" id="home">
+        <h1 style="color: blue;">Gmail</h1>
+        <h2>Welcome</h2>
+        <p>Create an account or login</p>
+
+        <a href="#register">
+            <button>Sign Up</button>
+        </a>
+
+        <a href="#login">
+            <button>Login</button>
+        </a>
+    </div>
+
+    <!-- Registration Page -->
+    <div class="box page" id="register">
+        <h1 style="color: blue;">Gmail</h1>
+        <h2>Create Account</h2>
+
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+
+        <p>Already have an account?</p>
+        <a href="#login">Login</a>
+        <br><br>
+        <a href="#home">Back to Home</a>
+    </div>
+
+    <!-- Login Page -->
+    <div class="box page" id="login">
+        <h1 style="color: blue;">Gmail</h1>
+        <h2>Login</h2>
+        <p>Welcome Back!</p>
+
+        <form>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>New user?</p>
+        <a href="#register">Sign Up</a>
+        <br><br>
+        <a href="#home">Back to Home</a>
+    </div>
+
+</body>
+</html>
